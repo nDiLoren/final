@@ -99,7 +99,7 @@ const catColors =
 let chosenCat = "";
 while (chosenCat.toLowerCase() !== "leo" && chosenCat.toLowerCase() !== "luna")
 {
-    chosenCat = prompt(`Would you like to see pictures of Leo or of Luna`);
+    chosenCat = prompt(`Would you like to see pictures of Leo or of Luna?`, "Leo");
 }
 
 /*
@@ -124,7 +124,7 @@ function updatePage(photo, index)
 function showImage(index) 
 {
     let photo = "";
-    switch (chosenCat)
+    switch (chosenCat.toLowerCase())
     {
         case "leo":
             photo = leoImages[index];
